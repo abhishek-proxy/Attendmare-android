@@ -20,6 +20,7 @@ public class LoginScreenActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        new LoginScreenPresenter(loginScreenModel(),loginScreenView());
     }
 
     private LoginScreenView loginScreenView(){
